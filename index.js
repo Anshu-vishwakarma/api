@@ -5,7 +5,9 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 
 dotenv.config();
-
+app.get('/',(req,res)=>{
+     res.send("server is on")
+})
 // connect to db
 mongoose.connect(
   process.env.DB_CONNECT,
